@@ -1,0 +1,88 @@
+import  { useState } from 'react'
+import emailjs from '@emailjs/browser';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+
+function Contact() {
+  const [formData, setFormData] = useState({
+      name: "",
+      email: "",
+      message: "",
+  });
+
+  const [isSent, setIsSent] = useState(false);
+
+  const handleChange = (e) => {
+      setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+  const handleSubmit = (e) => {
+      e.preventDefault();
+
+      emailjs.send(
+        "service_f4sn5bj", 
+        "template_ud9nxsg",
+        formData,
+        "B3sPGFgxCxjI0Tlbj"
+      )
+      .then(() => {
+          setIsSent(true);
+          setFormData({ name: "", email: "", message: "" });
+      })
+      .catch((error) => {
+          console.error("Error sending message:", error);
+      });
+  };
+
+  return (
+    <div className="contact-page">
+      <div className="contact-info">
+      <h1> Contact Us </h1>
+      <div>&#x1F1FA;&#x1F1F8;</div>
+      <p>
+       <FontAwesomeIcon icon={faPhone} />   +1 240 535 4137
+       </p>
+      <p>
+       <FontAwesomeIcon icon={faEnvelope} />  crbarclayjr@aol.com
+      </p>
+      </div>
+
+      <div className="contact-form-container">
+            <h3>Send us a message</h3>
+            {isSent && <p className="success-message">Message sent Successfully!</p>}
+            
+            <form onSubmit={handleSubmit} className="contact-form">
+                <label>Name:</label>
+                <input
+                   type="text"
+                   name="name"
+                   value={formData.name}
+                   onChange={handleChange}
+                   required
+                   />
+
+                   <label>Email:</label>
+                   <input
+                      type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                      />
+
+              <label>Message:</label>
+              <textarea
+                 name="message"
+                 value={formData.message}
+                 onChange={handleChange}
+                 required
+                 ></textarea>
+
+            <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+  )
+}
+
+export default Contact

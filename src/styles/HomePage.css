@@ -1,0 +1,66 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .bio {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap; /* allows it to stack on small screens */
+  }
+  
+  .bio img {
+    width: 540px;
+    height: 500px;
+    border: 1.3px solid red;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .bio-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin-left: 2rem;
+  }
+
+  .bio h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.1rem;
+    color: #1b4696;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .bio h2 {
+    font-size: 2rem;
+    margin-bottom: 0.1rem;
+    color: #1b4696;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  .bio p {
+    background-color: #1b46962e;
+    border: 1.3px solid red;
+    padding: 2rem;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #333;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    max-width: 600px;
+  }
