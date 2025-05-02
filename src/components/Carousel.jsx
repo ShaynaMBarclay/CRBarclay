@@ -16,8 +16,8 @@ function Carousel() {
         navigation
         autoplay={{ delay: 3000 }}
         loop
-        className="carousel-container"
-      >
+        speed={800}
+        className="carousel-container">
         <SwiperSlide className="carousel-slide">
           <img src={atm1} alt="Slide 1" className="carousel-image" />
           <div className="carousel-overlay">

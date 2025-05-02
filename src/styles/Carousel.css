@@ -6,7 +6,7 @@
   .carousel-container {
     overflow: hidden;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
+    margin-bottom: 0.1rem;
   }
   
   .carousel-image {
@@ -21,7 +21,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    background: rgba(0, 0, 0, 0.5);
     padding: 2rem 3rem;
     border-radius: 10px;
     color: #fffefe;
@@ -33,3 +33,35 @@
     font-weight: bold;
     font-family: 'Ubuntu', sans-serif;
   }
+
+  /* FOR MOBILE VERSIONS */
+
+  @media (max-width: 768px) {
+    .carousel-image {
+      height: 250px;
+    }
+  
+    .carousel-overlay {
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
+    }
+  
+    .carousel-text {
+      font-size: 1.3rem;
+    }
+
+    @media (max-width: 480px) {
+      .carousel-image {
+        height: 200px;
+      }
+    
+      .carousel-text {
+        font-size: 1.1rem;
+      }
+    
+      .carousel-overlay {
+        padding: 0.8rem 1rem;
+      }
+    }
+  }
+  

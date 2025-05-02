@@ -37,7 +37,6 @@ function Contact() {
     <div className="contact-page">
       <div className="contact-info">
       <h1> Contact Us </h1>
-      <div>&#x1F1FA;&#x1F1F8;</div>
       <p>
        <FontAwesomeIcon icon={faPhone} />   +1 240 535 4137
        </p>

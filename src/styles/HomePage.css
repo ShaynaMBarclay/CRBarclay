@@ -13,7 +13,7 @@
     max-width: 1200px;
     margin-top: 2rem;
     margin-bottom: 4rem;
-    flex-wrap: wrap; /* allows it to stack on small screens */
+    flex-wrap: wrap; 
   }
   
   .bio img {
@@ -63,4 +63,42 @@
     font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     max-width: 600px;
+    margin-bottom: 0.1rem;
+  }
+
+  /* Mobile version */
+  @media (max-width: 768px) {
+    .bio {
+      flex-direction: column;
+      align-items: center;
+      margin: 1rem 0;
+    }
+  
+    .bio img {
+      width: 90%;
+      height: auto;
+      margin-bottom: 0.4rem;
+    }
+  
+    .bio-text {
+      margin-left: 0;
+      padding: 0 1rem;
+      max-width: 100%;
+    }
+  
+    .bio h1 {
+      font-size: 1.9rem;
+      text-align: center;
+    }
+  
+    .bio h2 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    .bio p {
+      font-size: 1.2rem;
+      padding: 1rem;
+      line-height: 1.6;
+    }
   }

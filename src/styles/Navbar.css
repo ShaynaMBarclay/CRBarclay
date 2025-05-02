@@ -36,8 +36,8 @@
 
 .navbar-logo img {
    margin-left: 1.3rem;
-    width: 6rem;
-    height: 6rem;
+    width: 9.7rem;
+    height: 5rem;
 }
 
 .nav-button {
@@ -63,5 +63,45 @@
   transition: transform 0.3s ease-in-out;
 }
 
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .navbar-logo {
+    gap: 2.8rem;
+  }
+
+  .company-name {
+    font-size: 2.3rem;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  .navbar-logo img {
+    width: 8rem;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .nav-button {
+    background-color: #1b4696;
+    color: white;
+    padding: 0.5rem 0.8rem;
+    margin: 11rem;
+    border: none;
+    border-radius: 20px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+}
 
 
