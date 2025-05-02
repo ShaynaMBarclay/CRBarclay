@@ -36,7 +36,7 @@ function Contact() {
       });
   };
 
-  const handleRedirect = () => {
+    const handleRedirect = () => {
     navigate("/"); 
   };
 
