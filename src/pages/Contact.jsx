@@ -86,11 +86,6 @@ function Contact() {
             <button type="submit">Send Message</button>
             </form>
         </div>
-        
-      <button className="go-home-button" onClick={handleRedirect}>
-        Go to Home
-      </button>
-
     </div>
   )
 }

@@ -80,24 +80,6 @@
     color: green;
     font-weight: bold;
   }
-  .go-home-button {
-    position: absolute;
-    bottom: 16rem;
-    background-color: #1b4696;
-    color: white;
-    padding: 0.8rem 0.9rem;
-    border-radius: 30px;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 1.8rem;
-    font-weight: bold;
-    text-decoration: none;
-    margin: 3rem 13rem 0;
-  }
-
-  .go-home-button:hover {
-    background-color: #14336c;
-  }
-  
   /* Mobile version */
 
   @media (max-width: 768px) {
@@ -174,14 +156,6 @@
       color: green;
       font-weight: bold;
       font-size: 1rem;
-    }
-
-    .go-home-button {
-        position: static;
-        display: block;
-        margin: 0.3rem auto 0 auto;
-        font-size: 1.3rem;
-        width: fit-content;
     }
 
   }
