@@ -2,6 +2,7 @@ import  { useState } from 'react'
 import emailjs from '@emailjs/browser';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from 'react-router-dom';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -11,6 +12,8 @@ function Contact() {
   });
 
   const [isSent, setIsSent] = useState(false);
+
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
       setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -31,6 +34,10 @@ function Contact() {
       .catch((error) => {
           console.error("Error sending message:", error);
       });
+  };
+
+  const handleRedirect = () => {
+    navigate("/"); 
   };
 
   return (
@@ -79,6 +86,10 @@ function Contact() {
             <button type="submit">Send Message</button>
             </form>
         </div>
+        
+      <button className="go-home-button" onClick={handleRedirect}>
+        Go to Home
+      </button>
 
     </div>
   )
