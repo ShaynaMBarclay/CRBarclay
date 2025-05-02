@@ -22,10 +22,10 @@ function Contact() {
       e.preventDefault();
 
       emailjs.send(
-        "service_f4sn5bj", 
-        "template_ud9nxsg",
+        "service_60moz9q", 
+        "template_90zvhpe",
         formData,
-        "B3sPGFgxCxjI0Tlbj"
+        "H61SpxzNmxG-dTJsl"
       )
       .then(() => {
           setIsSent(true);
