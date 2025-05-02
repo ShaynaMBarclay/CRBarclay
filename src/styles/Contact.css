@@ -128,9 +128,10 @@
     .contact-form-container {
       width: 100%;
       padding: 2rem;
+      margin-bottom: 3rem;
       box-shadow: none;
       border: 1px solid #ff0000;
-      margin-top: 20px; /* Adds space between the contact info and form */
+      margin-top: 20px; 
     }
   
     .contact-form {
@@ -176,17 +177,12 @@
     }
 
     .go-home-button {
-    background-color: #1b4696;
-    color: white;
-    margin-left: 5rem;
-    padding: 0.5rem 0.8rem;
-    border-radius: 30px;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 1.4rem;
-    font-weight: bold;
-    text-decoration: none;
-    margin: 1rem 0;
-    bottom: -19.5rem;   
-  }
+        position: static;
+        display: block;
+        margin: 0.3rem auto 0 auto;
+        font-size: 1.3rem;
+        width: fit-content;
+    }
+
   }
   
