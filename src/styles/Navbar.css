@@ -89,6 +89,9 @@
   }
 
   .nav-button {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     background-color: #1b4696;
     color: white;
     padding: 0.5rem 0.8rem;
